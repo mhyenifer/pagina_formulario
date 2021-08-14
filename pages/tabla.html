@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla con estilo CSS aplicando Media Queri</title>
+
+    <style>
+    body *{
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        header{
+             background: #73C6B6; 
+        }
+
+        header img{
+            margin: auto;
+            width: 100px;
+            
+        }
+           
+        header h1,
+        header h2,
+        header h3{
+            text-align: center;
+        }
+
+        table{
+            border: 2px solid black;
+            width: 100%;
+            
+        }
+        
+        td,th{
+            color: black;
+            text-align:justify;
+            border: 2px solid lightseagreen;
+            padding: 10px;
+          
+        }
+        tr:hover{
+            background-color: lightskyblue;
+
+        }
+        @media screen and (max-width: 600px) {
+            table{
+            width: 100%;
+            
+        }
+        
+        }
+       
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/230px-HTML5_logo_and_wordmark.svg.png" alt="logotipo">
+        <h1>Desarrollo Web</h1>
+        <h2>Instroduccion a HTML 5</h2>
+        <h3>Propiedades de CSS mediante tablas y Media Query</h3>
+
+    </header>
+
+    <table>
+        <thead>
+            <tr><th>No.</th><th>Nombre</th><th>Descripcion</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>1</td><td>border:10px solid black</td><td>Por defecto las tablas vienen sin borde, pero se puede mejorar mediante CSS. </td></tr>    
+            <tr><td>2</td><td>Border-collapse:collapse;</td><td>Por defecto al definir borde son doble, con esta propiedad se contrae el borde a uno solido</td></tr> 
+            <tr><td>3</td><td>text-align:left;</td><td>Por defecto el texto de la cabecera viene centrado.</td></tr>    
+               
+        </tbody>
+      </table>
+      <!--Pie de pagina-->
+    <footer>
+        <h3>Copyright Yenifer 2021</h3>
+    </footer>
+</body>
+</html>

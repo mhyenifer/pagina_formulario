@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+          header{
+             background: #73C6B6; 
+        }
+
+        header img{
+            margin: auto;
+            width: 100px;
+            
+        }
+           
+        header h1,
+        header h2,
+        header h3{
+            text-align: center;
+        }
+
+        
+        .row2cols{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                margin: 5px;
+                
+        }
+
+        .row2cols label{
+            background-color: whitesmoke;
+            color:darkblue;
+            padding: 10px;
+            text-align:justify;
+            margin: 2px;
+            
+        }
+
+        .row2cols input,
+        .row2cols textarea{
+            background-color:whitesmoke;
+            color:darkblue;
+            padding: 20px;
+            text-align: justify;
+            border-style: none;
+            margin: 2px;
+
+        }
+
+        input[type="submit"]{
+            background-color: grey;
+            color: white;
+            font-size: 15px;
+            padding: 10px;
+            border: 2px solid white;
+            margin: 10px;
+            text-align: center;
+        }
+
+        fieldset{
+            background: lightgray;
+            margin: 100px;
+        }
+
+
+        .botonesAlineados {
+            float: left;
+        }
+
+            </style>
+
+</head>
+<body>
+    <header>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/230px-HTML5_logo_and_wordmark.svg.png" alt="logotipo">
+        <h1>Desarrollo Web</h1>
+        <h2>HTML 5 Y CSS</h2>
+        <h3>Formulario</h3>
+
+
+    </header>
+
+    <main>
+
+        <form action="">
+
+
+            <fieldset>
+    
+                <legend>
+                    <br><h2>Actividad de Clase</h2>
+                </legend>
+    
+                <div class="row2cols">
+                        
+                    <label for="datos personaeles">DATOS PERSONALES</label>
+                   
+                </div>
+                
+                <div class="row2cols">
+                    <label for="documento de identificacion">Identificacion</label>
+                    <input  type="text" 
+                            name="identificacion" 
+                            id="identifiacion">
+                </div>
+    
+                <div class="row2cols">
+                    <label for="Nombre">Nombre</label>
+                    <input  type="text" 
+                            id="nombre" 
+                            name="nombre">
+    
+                </div>
+                
+                <div class="row2cols">
+                    <label for="Direccion">Direccion</label>
+                    <input  type="text" 
+                            id="direccion" 
+                            name="direccion">
+                </div>
+    
+                <div class="row2cols">
+                    <label for="pais">Pais</label>
+                    <input  type="text" 
+                            id="pais" 
+                            name="pais">
+    
+                </div>
+    
+                <div class="row2cols">
+                    <label for="email">E-mail</label>
+                    <input  type="email" 
+                            id="imail" 
+                            name="email">
+    
+                </div>
+    
+                <div class="row2cols">
+                    <label for="observaciones">Observaciones</label>
+                    <input  type="text" 
+                            id="observaciones" 
+                            name="observaciones">
+    
+                </div>
+                
+                <div class="row2cols">
+                    <label for="datos laborales">DATOS LABORALES</label>
+                </div>
+             
+    
+                <div class="row2cols">
+                    <label for="empresa">Empresa</label>
+                    <input  type="text" 
+                            id="empresa" 
+                            name="empresa">
+                </div>
+    
+                <div class="row2cols">
+                    <label for="sueldo ordinario">Sueldo ordinario</label>
+                    <input  type="number" 
+                            id="sueldo" 
+                            name="sueldo">
+                </div>
+    
+                <div class="row2cols">
+                    <label for="bonificacion">Bonificacion</label>
+                    <input  type="number" 
+                            id="bonificacion" 
+                            name="bonificacion">
+                </div>
+    
+                <div class="row2cols">
+                    <label for="otras bonificaciones">Otras Bonicaciones</label>
+                    <input  type="number"
+                            id="bonificaciones"
+                            name="bonificaciones">
+    
+                </div>
+                <div class="row2cols">
+                    <div></div>
+                    <input type="submit" value="Enviar Datos">
+                </div>
+    
+            </fieldset>
+        </form>
+    
+    </main>
+
+</body>
+</html>
